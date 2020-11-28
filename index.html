@@ -11,37 +11,38 @@
 <body>
     <section>
         <div class="container">
-            <div class="user login">
-                <div class="image"><img src="img/flag.jpg" alt="pict"></div>
+            <div class="user signBox">
+                <div class="imageBox"><img src="img/flag.jpg" alt="pict"></div>
                 <div class="boxform">
-                    <form action="">
-                        <h2>Login</h2>
+                    <form>
+                        <h2>Sign In</h2>
                         <input type="text" placeholder="Login">
                         <input type="password" name="" id="" placeholder="Password">
                         <input type="submit" value="LogIn">
-                        <p class="logout">Don't have account?<a href="#">Registration</a></p>
+                        <p class="signup">Don't have account?<a href="#" onclick="changeForm();">Registration</a></p>
                     </form>
                 </div>
             </div>
-            <div class="user reg">
-
+            <div class="user signupBox">
                 <div class="boxform">
-                    <form action="">
+                    <form>
                         <h2>Create account</h2>
-                        <input type="text" placeholder="Username">
-                        <input type="email" name="" id="" placeholder="email">
-                        <input type="password" name="" id="" placeholder="Password">
+                        <input type="text" placeholder="Login">
+                        <input type="email" name="" id="" placeholder="Your email">
+                        <input type="password" name="" id="" placeholder="Create password">
                         <input type="password" name="" id="" placeholder="Confirm password">
-                        <input type="submit" value="Create">
-                        <p class="logout">Have you account?<a href="#" onclick="changeForm()">LogIn</a></p>
+
+                        <input type="submit" value="Sign Up">
+                        <p class="signup">Have you account already?<a href="#" onclick="changeForm();">Sign In</a></p>
                     </form>
                 </div>
-                <div class="image"><img src="img/britan.jpg" alt="pict"></div>
+                <div class="imageBox"><img src="img/night.jpg" alt="pict"></div>
             </div>
-
         </div>
     </section>
+
     <script src="script.js"></script>
+
 </body>
 
 </html>

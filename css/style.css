@@ -23,6 +23,10 @@ section .container {
     overflow: hidden;
 }
 
+.active {
+    background-color: lawngreen;
+}
+
 section .container .user {
     position: absolute;
     top: 0;
@@ -117,7 +121,7 @@ section .container .signupBox {
     pointer-events: none;
 }
 
-section .container .active .signupBox {
+section .container.active .signupBox {
     pointer-events: initial;
 }
 
@@ -125,30 +129,42 @@ section .container .signupBox .boxform {
     left: 100%;
 }
 
-section .container .active .signupBox .boxform {
+section .container.active .signupBox .boxform {
     left: 0;
 }
 
 section .container .signupBox .imageBox {
-    left: 100%;
-}
-
-section .container .active .signupBox .imageBox {
-    left: 0;
-}
-
-section .container .signBox .boxform {
-    left: 0;
-}
-
-section .container .active .signBox .boxform {
     left: -100%;
 }
 
-section .container .signBox .imageBox {
+section .container.active .signupBox .imageBox {
     left: 0;
 }
 
-section .container .active .signBox .imageBox {
+section .container .signinBox .boxform {
+    left: 0;
+}
+
+section .container.active .signinBox .boxform {
     left: 100%;
+}
+
+section .container .signinBox .imageBox {
+    left: 0;
+}
+
+section .container.active .signinBox .imageBox {
+    left: -100%;
+}
+
+@media(max-width:991px) {
+    section .container {
+        min-width: 400px;
+    }
+    section .container .imageBox {
+        display: none;
+    }
+    section .container .user .boxform {
+        width: 100%;
+    }
 }
